@@ -12,7 +12,7 @@
     <?php include 'includes/navigation.php'; ?>
 
     <!-- Include welcome message -->
-    <?php include 'welcome.php;' ?>
+    <?php include 'welcome.php'; ?>
 
 </body>
 </html>
