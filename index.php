@@ -14,5 +14,8 @@
     <!-- Include welcome message -->
     <?php include 'welcome.php'; ?>
 
+    <!-- Your main content goes here -->
+    
+
 </body>
 </html>
