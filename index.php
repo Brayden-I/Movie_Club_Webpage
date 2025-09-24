@@ -1,3 +1,11 @@
+<?php
+// Redirect to signup page if 'member' parameter is set to 'false'
+if (isset($_GET['member']) && $_GET['member'] === 'false') {
+    header("Location: signup.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
