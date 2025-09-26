@@ -9,7 +9,7 @@
     {
         $username = trim($_POST['username'] ?? '');
         $email = trim($_POST['email'] ?? '');
-        $_POST = trim($_POST['password'] ?? '');
+        $password = trim($_POST['password'] ?? '');
         $favorite_movie = trim($_POST['favorite_movie'] ?? '');
 
         if (empty($username)){
@@ -36,9 +36,8 @@
 
     // Check for success message
     $show_success = isset($_GET['ok']) && $_GET['ok'] === '1';
-    $name = $_GET['name'] ?? '';
-    $movie = $_GET['movie'] ?? '';
-    ?>
+    $username = $_GET['username'] ?? '';
+    $favorite_movie = $_GET['favorite_movie'] ?? '';
 ?>
 
 <?php 
