@@ -13,14 +13,18 @@ if (isset($_GET['member']) && $_GET['member'] === 'false') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Boostrap CSS -->
     <?php include 'includes/bootstrapcdnlinks.php'; ?>
-    <title>Document</title>
+    <title>Movie club</title>
 </head>
 <body>
     <!-- Include the navigation bar -->
     <?php include 'includes/navigation.php'; ?>
 
-    <!-- Include welcome message -->
-    <?php include 'welcome.php'; ?>
+    <div class="mt-4">
+        <a href="signup.php" class="btn btn-primary">Join the Club!</a>
+        <a href="welcome.php?member=false" class="btn btn-outline-secondary">VIP Area</a>
+        
+
+    </div>
 
     <!-- Your main content goes here -->
     
