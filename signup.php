@@ -29,7 +29,7 @@
         }
 
         if (empty($errors)){
-            header("Location: signup.php?ok=1&username=" . urlencode($username) . "&movie=" . urlencode($favorite_movie));
+            header("Location: signup.php?ok=1&username=" . urlencode($username) . "&favorite_movie=" . urlencode($favorite_movie));
             exit();
         }
     }
@@ -50,7 +50,7 @@ include 'includes/navigation.php';
 
     <?php if ($show_success): ?>
         <div class="alert alert-success">
-            Thanks <?php echo htmlspecialchars($username); ?>, we've added your favorite movie "<?php echo htmlspecialchars($movie); ?>" to our club list.
+            Thanks <?php echo htmlspecialchars($username); ?>, we've added your favorite movie "<?php echo htmlspecialchars($favorite_movie); ?>" to our club list.
         </div>
     <?php endif; ?>
 
